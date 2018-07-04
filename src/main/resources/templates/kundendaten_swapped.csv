@@ -1,0 +1,101 @@
+Nr. ; Vorname ; Nachname ; Geburtsdatum ; Geschlecht ; PLZ ; Strasse ; Hausnummer ; Stadt ; E-Mail
+1; Judith ; Eckstein ; 1955.11.27 ; w ;6766; Baumberger Str. ;111; Bobbau ; udith.eckstein@ewe.de
+2; Leo ; Oppermann ; 27.12.1956 ; m ;69120; Am Grauen Stein ;197; Heidelberg ; l.oppermann@ewe.de
+3; Marianne ; Hilgers ; 28.9.1935 ; w ;24247; Drachterstr. ;151; Rodenbek ; m.hilgers@ewe.de
+4; Joern ; Jaeckle ; 16.2.1987 ; m ;25863; Nerzweg ;187; Langeness ; j.jaeckle@ewe.de
+5; Viktor ; Sims ; 22.11.1949 ; m ;94569; Foersterstr. ;102; Stephansposching ; viktor.sims@ewe.de
+6; Teresa ; Baehr ; 1.10.1965 ; w ;79618; Mondstr. ;3; Rheinfelden ; teresa.baehr@ewe.de
+7; Lucia ; Born ; 26.9.1949 ; w ;7381; Kurze Str. ;127; Solkwitz ; lucia.born@ewe.de
+8; Ruth ; Henderson ; 10.8.1948 ; w ;83362; Buenkamp ;132; Surberg ; r.henderson@ewe.de
+9; Samira ; Haffner ; 20.7.1931 ; w ;70376; Hogenbergstr. ;156; Stuttgart ; s.haffner@ewe.de
+10; Sebastian ; Hall ; 7.9.1968 ; m ;72458; Hoelkenbusch ;103; Ebingen ; s.hall@ewe.de
+11; Damian ; Kugler ; 24.2.1956 ; m ;82538; Boettcherstr. ;116; Geretsried ; d.kugler@ewe.de
+12; Layla ; Dittrich ; 9.6.1951 ; w ;55234; Flasskuhl ;86; Hochborn ; l.dittrich@ewe.de
+13; Levin ; Mucha ; 27.11.1933 ; m ;38259; Gescherweg ;123; Salzgitter ; levin.mucha@ewe.de
+14; Barbara ; May ; 28.6.1971 ; w ;73568; Eulenbergstr. ;129; Durlangen ; barbara.may@ewe.de
+15; Norbert ; Krenz ; 3.9.1939 ; m ;23898; Hillscheider Weg ;23; Klinkrade ; orbert.krenz@ewe.de
+16; Alexa ; Carr ; 25.8.1950 ; w ;66117; Teutonenstr. ;173; Saarbruecken ; alexa.carr@ewe.de
+17; Lorena ; Nachtigall ; 24.9.1946 ; w ;87743; Hensenstr. ; 49a ; Egg an der Guenz ; l.nachtigall@ewe.de
+18; Carolin ; Simons ; 20.4.1939 ; w ;42283; Wiedehagen ;101; Wuppertal ; carolin.simons@ewe.de
+19; Julius ; Adolf ; 26.11.1996 ; m ;56291; Dodostr. ;181; Birkheim ;j.adolf@ewe.de 
+20; Lynn ; Gutzeit ; 22.9.1984 ; w ;86863; Am Dornbusch ;197; Langenneufnach ; l.gutzeit@ewe.de
+21; Rebecca ; Todd ; 14.3.1976 ; w ;89081; Immelmannstr. ;40; Ulm ; r.todd@ewe.de
+22; Josephine ; Falkenstein ; 8.12.1925 ; w ;24392; Hermann-Treff-Weg ;160; Ekenis ; j.falkenstein@ewe.de
+23; Gerd ; Andrews ; 2.6.1922 ; m ;77855; Raesfeldstr. ; 194a ; Achern ; g.andrews@ewe.de
+24; Silvia ; Decker ; 1.5.1950 ; w ;1705; Merheimer Str. ;71; Freital ; silvia.decker@ewe.de
+25; Isabel ; Reinsch ; 10.7.1971 ; w ;18276; Eifelstr. ;19; Muehl Rosin ; isabel.reinsch@ewe.de
+26; Patrik ; Sauer ; 9.12.1975 ; m ;39221; Rottkamp ;69; Boerdeland ; patrik.sauer@ewe.de
+27; Michael ; Hirsch ; 16.6.1934 ; m ;23730; Horstmarer Landweg ;75; Altenkrempe ; michael.hirsch@ewe.de
+28; Samantha ; Fischer ; 12.7.1954 ; w ;66851; Marktstr. ;141; Linden ; s.fischer@ewe.de
+29; Anneliese ; Richardson ; 3.11.1931 ; w ;98574; Oelbergstr. ;34; Schmalkalden ; anneliese.richardson@ewe.de
+30; Janis ; Bachmann ; 19.7.1986 ; m ;66663; Landoisstr. ;138; Merzig ; nis.bachmann@ewe.de
+31; Zoe ; Leng ; 24.10.1987 ; w ;6844; Studtstr. ;165; Dessau ; zoe.leng@ewe.de
+32; Lars ; Wessels ; 8.11.1942 ; m ;17087; Meinertzstr. ;125; Altentreptow ; l.wessels@ewe.de
+33; Lennart ; Harvey ; 4.2.1944 ; m ;14715; Ostlandstr. ;181; Milower Land ; lennart.harvey@ewe.de
+34; Nora ; Waten ; 13.10.1930 ; w ;21514; Berrischstr. ;28; Fitzen ; ora.waten@ewe.de
+35; Rike ; Bartl ; 5.1.1922 ; w ;67229; Lassallestr. ;141; Laumersheim ; rike.bartl@ewe.de
+36; Leonard ; Hit ; 5.6.2000 ; m ;82294; Eulenbergstr. ;190; Oberschweinbach ; leonard.hit@ewe.de
+37; Levin ; Roy ; 10.9.1969 ; m ;53937; Tondernstr. ;115; Schleiden ; levin.roy@ewe.de
+38; Rudolph ; Kasper ; 1.9.1955 ; m ;63864; Sentmaringer Weg ;80; Glattbach ; rudolph.kasper@ewe.de
+39; Hildegard ; Hertwig ; 15.8.1946 ; w ;91224; Meckmannweg ;114; Pommelsbrunn ; h.hertwig@ewe.de
+40; Maren ; Moeller ; 6.11.1988 ; w ;38272; Johann-Krane-Weg ;21; Burgdorf ; m.moeller@ewe.de
+41; Thorben ; Kaden ; 7.10.1988 ; m ;74394; Nienkamp ;175; Hessigheim ; thorben.kaden@ewe.de
+42; Leander ; Lachmann ; 16.9.1996 ; m ;24863; Offerkaempe ;42; Boerm ; l.lachmann@ewe.de
+43; Sinah ; Schweiger ; 9.6.1999 ; w ;16775; Gartenstr. ;117; Sonnenberg ; sinah.schweiger@ewe.de
+44; Rebekka ; Nagl ; 7.1.1960 ; w ;66917; Altenhofer Weg ;190; Biedershausen ; r.nagl@ewe.de
+45; Luk ; Muehl ; 17.4.1920 ; m ;37297; Emdener Str. ;91; Berkatal ; luk.muehl@ewe.de
+46; Jens ; Falkenberg ; 23.3.1955 ; m;9128; Dreizehnerstr. ;153; Chemnitz ; j.falkenberg@ewe.de 
+47; Eileen ; Kanzler ; 7.2.1924 ; w ;44141; Werkstattstr. ;85; Dortmund ; e.kanzler@ewe.de
+48; Muhammed ; Bahr ; 14.7.1924 ; m ;24358; Agrippastr. ;39; Huetten ; muhammed.bahr@ewe.de
+49; Phil ; Schuett ; 11.1.1937 ; m ;4720; Kerssenbrockstr. ;172; Doebeln ; phil.schuett@ewe.de
+50; Marike ; Kreuzer ; 7.11.1982 ; w ;24109; Arnheimweg ;89; Kiel ; marike.kreuzer@ewe.de
+51; Wilfried ; Heilmann ; 27.10.1923 ; m ;37619; Kappenberger Damm ;185; Bodenwerder ; w.heilmann@ewe.de
+52; Rosemarie ; Genz ; 3.9.1982 ; w ;12167; Schwalbenweg ;51; Berlin ; rosemarie.genz@ewe.de
+53; Luk ; Wilhelmi ; 17.12.1981 ; m ;56237; Friesenring ;67; Alsbach ; luk.wilhelmi@ewe.de
+54; Jason ; Eggert ; 8.6.1958 ; m ;57539; Am Nubbenberg ;72; Breitscheidt ;j.eggert@ewe.de 
+55; Malin ; Webb ; 8.7.1953 ; w ;56357; Friedrich-Ebert-Str. ;137; Niederbachheim ; malin.webb@ewe.de
+56; Xenia ; Kappler ; 21.6.1985 ; w ;97464; Buenkamp ;60; Oberwerrn ; xenia.kappler@ewe.de
+57; Samuel ; Adkins ; 24.1.1938 ; m ;37431; Soetenkamp ;192; Bad Lauterberg ; samuel.adkins@ewe.de
+58; Silas ; Schroeter ; 16.5.1994 ; m ;79359; Friedrichstr. ;25; Riegel am Kaiserstuhl ; s.schroeter@ewe.de
+59; Kristine ; Wilde ; 4.7.1937 ; w ;75038; Horstmarer Landweg ;52; Oberderdingen ; kristine.wilde@ewe.de
+60; Patrik ; Gutzeit ; 21.4.1954 ; m ;93352; An den Weiden ;172; Rohr ; p.gutzeit@ewe.de
+61; Nicholas ; Feierabend ; 25.5.1978 ; m ;21516; Gustav-Tweer-Weg ;37; Schulendorf ; n.feierabend@ewe.de
+62; Kimberley ; Burghardt ; 3.2.1932 ; w ;24975; Dreilinden ;107; Huerup ; kimberley.burghardt@ewe.de
+63; Florian ; McKenzie ; 4.12.1920 ; m ;4860; Nienkamp ;177; Zinna ; florian.mckenzie@ewe.de
+64; Marina ; Siegler ; 17.11.1925 ; w ;76768; Altenhofer Weg ;103; Berg ; m.siegler@ewe.de
+65; Maxim ; Matthes ; 24.3.1987 ; m ;21382; Kurneystr. ;136; Brietlingen ; maxim.matthes@ewe.de
+66; Ruediger ; Kayser ; 20.7.1998 ; m ;29479; Am Ziegelofen ;117; Jameln ; ruediger.kayser@ewe.de
+67; Anika ; Leber ; 11.2.1958 ; w ;12459; Olpener Str. ;34; Treptow-Koepenick ; anika.leber@ewe.de
+68; Heinrich ; Herman ; 1.5.1977 ; m ;38642; Steinkamp ;10; Goslar ; heinrich.herman@ewe.de
+69; Sophia ; Kroll ; 22.8.1954 ; w ;56479; Max-Winkelmann-Str. ;128; Stein-Neukirch ; s.kroll@ewe.de
+70; Wilfried ; Goertz ; 8.12.1958 ; m ;88376; Heroldstr. ;144; Koenigseggwald ; w.goertz@ewe.de
+71; Daniel ; Bamberg ; 18.11.1943 ; m ;54450; Gescherweg ;199; Freudenburg ; daniel.bamberg@ewe.de
+72; Norbert ; Estrada ; 8.12.1964 ; m ;83224; Skagerrakstr. ;197; Staudach-Egerndach ;n.estrada@ewe.de 
+73; Erik ; Koerber ; 17.5.1930 ; m ;76149; Breslauer Str. ;30; Karlsruhe ; e.koerber@ewe.de
+74; Carlotta ; Gutzeit ; 16.11.1999 ; w ;56291; Weserstr. ;186; Leiningen ; c.gutzeit@ewe.de
+75; Leo ; Haefele ; 6.9.1985 ; m ;25813; Telgenweg ; 73a ; Suedermarsch ; l.haefele@ewe.de
+76; Henri ; Ferguson ; 23.7.1981 ; m ;31691; Am Roemerhof ; 6a ; Helpsen ; henri.ferguson@ewe.de
+77; Cedric ; Jaeger ; 2.9.1925 ; m ;94554; Gartenstr. ;92; Moos ; cedric.jaeger@ewe.de
+78; Heidi ; Schauer ; 24.9.1927 ; w ;91625; Oelbergstr. ;128; Schnelldorf ; h.schauer@ewe.de
+79; Jennifer ; Braun ; 22.10.1999 ; w ;55627; Am Grauen Stein ;34; Weiler ; j.braun@ewe.de
+80; Stefanie ; Zoellner ; 4.7.1971 ; w ;49777; Manfred-von-Richthofen-Str. ;10; Stavern ; s.zoellner@ewe.de
+81; Leah ; Unger ; 21.4.1948 ; w ;76879; Widdeshover Weg ;195; Bornheim ; l.unger@ewe.de
+82; Laila ; Grothe ; 9.4.1923 ; w ;39264; Hoelkenbusch ;66; Hohenlepte ; l.grothe@ewe.de
+83; Jeremie ; Lauer ; 18.12.1991 ; m ;50767; Avendruper Str. ;177; Koeln ; eremie.lauer@ewe.de
+84; Zoe ; Seibold ; 23.3.1987 ; w ;6766; Simon-Meister-Str. ;153; Thalheim ; zoe.seibold@ewe.de
+85; Christa ; Eckard ; 12.6.1927 ; w ;97264; Hindenburgplatz ;134; Helmstadt ; c.eckard@ewe.de
+86; Mark ; Schuh ; 26.1.1985 ; m ;17033; Mindener Str. ;112; Neubrandenburg ; m.schuh@ewe.de
+87; Nik ; Sullivan ; 12.1.1957 ; m ;57638; Am Berler Kamp ;121; Neitersen ; ik.sullivan@ewe.de
+88; Vivien ; Kugler ; 17.2.1994 ; w ;57223; Am Bluetenhain ;82; Kreuztal ; v.kugler@ewe.de
+89; Diana ; Kappes ; 15.12.1937 ; w ;34329; Mecklenbecker Str. ;46; Nieste ; diana.kappes@ewe.de
+90; Johannes ; Sigl ; 8.2.1955 ; m ;91741; Ulmenweg ;23; Theilenhofen ; ohannes.sigl@ewe.de
+91; Manfred ; Fiedler ; 7.1.2000 ; m ;67727; Zuelpicher Str. ;110; Lohnsfeld ; manfred.fiedler@ewe.de
+92; Maximilian ; Aydin ; 4.10.1988 ; m ;94551; Salzmannstr. ;195; Hunding ; m.aydin@ewe.de
+93; Ian ; Schueler ; 20.6.1940 ; m ;56470; Heroldstr. ;132; Bad Marienberg ; i.schueler@ewe.de
+94; Heike ; Hans ; 22.7.1952 ; w ;97657; Hofstr. ;162; Sandberg ; h.hans@ewe.de
+95; Willi ; Berthold ; 16.5.1946 ; m ;88356; Stettiner Str. ;89; Ostrach ; w.berthold@ewe.de
+96; Julien ; Juergens ; 2.10.1961 ; m ;73329; Woerthstr. ;60; Kuchen ; j.juergens@ewe.de
+97; Quentin ; Knoll ; 8.1.1950 ; m ;30451; Goldregenweg ;61; Hannover ; quentin.knoll@ewe.de
+98; Ronja ; Singh ; 24.6.1989 ; w ;6502; Von-der-Tinnen-Str. ;134; Weddersleben ; ronja.singh@ewe.de
+99; Tabea ; Hartmann ; 21.11.1974 ; w ;86150; Hahnenstr. ;86; Augsburg ; tabea.hartmann@ewe.de
+100; Benjamin ; Korte ; 3.3.1947 ; m ;64397; Dorotheenstr. ;6; Modautal ; b.korte@ewe.de

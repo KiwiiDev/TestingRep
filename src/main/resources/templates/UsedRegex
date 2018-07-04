@@ -1,0 +1,27 @@
+",\s*(Dr.|Prof.)(\s((\w+)\.)?)*?,|,\s*Titel \s*," REPLACE WITH ","
+
+"ö" REPLACE WITH "oe"
+
+"Ö" REPLACE WITH "Oe"
+
+"Ä" REPLACE WITH "Ae"
+
+"Ü" REPLACE WITH "Ue"
+
+"ä" REPLACE WITH "ae"
+
+"ü" REPLACE WITH "ue"
+
+"ß" REPLACE WITH "ss"
+
+",\s*(((\w+)(\s|\-?))*(\.?))\s(\d+[a-z]?) ," REPLACE WITH ", $1, $6 ,"
+
+"Strasse" REPLACE WITH "Strasse  ,  Hausnummer"
+
+"(\s*(\d+\s*/\s*\d+)\s*,)|(Telefon|Mobil|Telefax)\s*," REPLACE WITH ""
+
+",\s*(ja|nein|j|n|y|yes|no|positiv|negativ|Newsletter)" REPLACE WITH ""
+
+", (Frau|Herr) ," REPLACE WITH ","
+
+
