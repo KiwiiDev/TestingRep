@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+    <link href=""../static/css/spring-core.css"
+        th:href="@{/css/spring-core.css}" rel="stylesheet" media="screen"/>
+<head>
+    <title>Customers</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div th:if=""${not #list.isEmpty(allCustomers)}">
+    <h1> All Customers</h1>
+<table border="1" style="width:300px" class="table table-striped">
+    <tr>
+        <th>ID</th>
+        <th>Forename</th>
+        <th>Lastname</th>
+        <th>Birthdate</th>
+        <th>Gender</th>
+        <th>Zipcode</th>
+        <th>Street</th>
+        <th>Housenumber</th>
+        <th>City</th>
+        <th>EMail</th>
+    </tr>
+    <tr th:each="customer: ${allCustomers}">
+
+    </tr>
+</table>
+
+<button type="button" class="btn btn-success">Kunden erstellen</button>
+
+</div>
+</body>
+</html>
