@@ -1,11 +1,11 @@
 package com.ewe.kevin210.webapp.customer.domain;
 
 
-import com.sun.istack.internal.NotNull;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.Objects;
@@ -21,7 +21,7 @@ public class Customer implements Serializable {
     @NotNull
     private String lastname;
     @NotNull
-    private String birthdate;
+    private Date birthdate;
     @NotNull
     private String gender;
 
@@ -50,7 +50,7 @@ public class Customer implements Serializable {
         return lastname;
     }
 
-    public String getBirthdate() {
+    public Date getBirthdate() {
         return birthdate;
     }
 

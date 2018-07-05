@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sd="http://www.w3.org/1999/xhtml">
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 
@@ -17,10 +17,10 @@
 <body>
 <div>
 <h1> All Customers</h1>
-<table border="1" style="width:300px" class="table table-striped">
-    <tr>
-        <th>ID</th>
-        <th>Forename</th>
+<table id ="customerTable" border="1" style="width:300px" class="table table-striped">
+    <thead>
+        <th>ID</a></th>
+        <th>Firstname</th>
         <th>Lastname</th>
         <th>Birthdate</th>
         <th>Gender</th>
@@ -29,11 +29,39 @@
         <th>Housenumber</th>
         <th>City</th>
         <th>EMail</th>
+    </thead>
+    <tbody>
+    <tr th:each="customer: ${customers}">
+        <td th:text="${customer?.customer_id}"></td>
+        <td th:text="${customer?.firstname}"></td>
+        <td th:text="${customer?.lastname}"></td>
+        <td th:text="${customer?.birthdate}"></td>
+        <td th:text="${customer?.gender}"></td>
+        <td th:text="${customer?.zipcode}"></td>
+        <td th:text="${customer?.street}"></td>
+        <td th:text="${customer?.housenumber}"></td>
+        <td th:text="${customer?.city}"></td>
+        <td th:text="${customer?.email}"></td>
     </tr>
-    <tr th:each="${customer}">
-
-    </tr>
+    </tbody>
 </table>
+
+
+</div>
+<div class="row">
+    <div class="col-sm-6">
+        <div sd:pagination-summary="">info</div>
+    </div>
+    <div class="col-sm-6">
+        <nav class="pull-right">
+            <ul class="pagination" sd:pagination="full">
+                <!-- Pagination created by SpringDataDialect, this content is just for mockup -->
+                <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+            </ul>
+        </nav>
+    </div>
+
 </div>
 </body>
 </html>
