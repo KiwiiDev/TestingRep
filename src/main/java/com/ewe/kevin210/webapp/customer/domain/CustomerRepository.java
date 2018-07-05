@@ -6,7 +6,6 @@ import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-
-public interface CustomerRepository extends CrudRepository<Customer, Integer> {
+public interface CustomerRepository extends JpaRepository<Customer, Integer> {
 
 }

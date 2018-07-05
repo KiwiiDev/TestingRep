@@ -2,6 +2,7 @@ package com.ewe.kevin210.webapp.customer.domain;
 
 
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -14,7 +15,7 @@ import java.util.Objects;
 @Table(name = "customer")
 public class Customer implements Serializable {
     @Id
-    private int customer_id;
+    private int id;
 
     @NotNull
     private String firstname;
@@ -38,8 +39,8 @@ public class Customer implements Serializable {
     public Customer() {
     }
 
-    public int getCustomer_id() {
-        return customer_id;
+    public int getId() {
+        return id;
     }
 
     public String getFirstname() {
@@ -83,7 +84,7 @@ public class Customer implements Serializable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Customer customer = (Customer) o;
-        return customer_id == customer.customer_id &&
+        return id == customer.id &&
                 zipcode == customer.zipcode &&
                 housenumber == customer.housenumber &&
                 Objects.equals(firstname, customer.firstname) &&
@@ -98,13 +99,13 @@ public class Customer implements Serializable {
     @Override
     public int hashCode() {
 
-        return Objects.hash(customer_id, firstname, lastname, birthdate, gender, zipcode, street, housenumber, city, email);
+        return Objects.hash(id, firstname, lastname, birthdate, gender, zipcode, street, housenumber, city, email);
     }
 
     @Override
     public String toString() {
         return "Customer{" +
-                "customer_id=" + customer_id +
+                "id=" + id +
                 ", firstname='" + firstname + '\'' +
                 ", lastname='" + lastname + '\'' +
                 ", birthdate=" + birthdate +

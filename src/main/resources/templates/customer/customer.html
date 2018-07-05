@@ -15,7 +15,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-<div>
+<div style="text-align:center">
 <h1> All Customers</h1>
 <table id ="customerTable" border="1" style="width:300px" class="table table-striped">
     <thead>
@@ -31,8 +31,8 @@
         <th>EMail</th>
     </thead>
     <tbody>
-    <tr th:each="customer: ${customers}">
-        <td th:text="${customer?.customer_id}"></td>
+    <tr th:each="customer: ${customerPage}">
+        <td th:text="${customer?.id}"></td>
         <td th:text="${customer?.firstname}"></td>
         <td th:text="${customer?.lastname}"></td>
         <td th:text="${customer?.birthdate}"></td>
@@ -45,23 +45,49 @@
     </tr>
     </tbody>
 </table>
-
-
 </div>
-<div class="row">
-    <div class="col-sm-6">
-        <div sd:pagination-summary="">info</div>
-    </div>
-    <div class="col-sm-6">
-        <nav class="pull-right">
-            <ul class="pagination" sd:pagination="full">
-                <!-- Pagination created by SpringDataDialect, this content is just for mockup -->
-                <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
-                <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-            </ul>
-        </nav>
-    </div>
 
+<div class="text-center" th:if="${customerPage} and ${customerPage.totalElements} > 0">
+    <nav>
+        <ul class="pagination">
+            <li th:classappend="${customerPage.first} ? 'disabled' : ''">
+                <a href="#!" aria-label="First"
+                   th:href="${customerPage.first} ? '#!' : @{${url}(page=0)}">
+                    <span aria-hidden="true">&lt;&lt;</span>
+                </a>
+            </li>
+            <li th:classappend="*{customerPage.first} ? 'disabled' : ''">
+                <a href="#!" aria-label="Previous"
+                   th:href="${customerPage.first} ? '#!' : @{${url}(page=${customerPage.number - 1})}">
+                    <span aria-hidden="true">&lt;</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="#!" th:text="${customerPage.number + 1} + '/' + ${customerPage.totalPages}">
+                    1/1<span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li th:classappend="${customerPage.last} ? 'disabled' : ''">
+                <a href="#!" aria-label="Next"
+                   th:href="${customerPage.last} ? '#!' : @{${url}(page=${customerPage.number + 1})}">
+                    <span aria-hidden="true">&gt;</span>
+                </a>
+            </li>
+            <li th:classappend="${customerPage.last} ? 'disabled' : ''">
+                <a href="#!" aria-label="Last"
+                   th:href="${customerPage.last} ? '#!' : @{${url}(page=${customerPage.totalPages - 1})}">
+                    <span aria-hidden="true">&gt;&gt;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
 </div>
+
+<div class="alert alert-info" role="alert" th:unless="${customers} and ${customers.totalElements} > 0">
+    <p class="text-center" th:text="#{pretest.list.site.table.nodata}">Es wurden keine Einträge gefunden.</p>
+</div>
+
+
+
 </body>
 </html>
