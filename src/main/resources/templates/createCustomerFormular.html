@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><!DOCTYPE HTML>
+        <html xmlns:th="http://www.thymeleaf.org" xmlns:sd="http://www.w3.org/1999/xhtml">
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+        <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.4/css/bootstrap.min.css"
+              th:href="@{/webjars/bootstrap/3.3.4/css/bootstrap.min.css}"
+              rel="stylesheet" media="screen" />
+
+        <link href="../static/css/guru.css"
+              th:href="@{css/guru.css}" rel="stylesheet" media="screen"/>
+
+        <head>
+            <title>Create Customer</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        </head>
+<body>
+<form th:action="@{/addCustomer}"
+      th:object="${customers}" method="POST">
+    <br>
+    First Name:
+    <input type="text" th:field="*{firstName}" />
+    <br/>
+    <br/>
+    Last Name:
+    <input type="text" th:field="*{lastName}" />
+    <br/>
+    <br/>
+    Last Name:
+    <input type="text" th:field="*{birthdate}" />
+    <br/>
+    <br/>
+    Last Name:
+    <input type="text" th:field="*{gender}" />
+    <br/>
+    <br/>
+    Last Name:
+    <input type="text" th:field="*{zipcode}" />
+    <br/>
+    <br/>
+    Last Name:
+    <input type="text" th:field="*{street}" />
+    <br/>
+    <br/>
+    Last Name:
+    <input type="text" th:field="*{housenumber}" />
+    <br/>
+    <br/>
+    Last Name:
+    <input type="text" th:field="*{city}" />
+    <br/>
+    <br/>
+    Last Name:
+    <input type="text" th:field="*{email}" />
+    <br/>
+    <input type="submit" value="Create" />
+</form>
+
+
+</body>
+</title>
+</head>
+<body>
+
+</body>
+</html>

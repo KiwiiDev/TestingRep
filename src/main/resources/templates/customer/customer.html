@@ -15,9 +15,16 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-<div style="text-align:center">
+<div class="row">
+<div class="col-md 2 col-md-offset-2" style="with:100%">
 <h1> All Customers</h1>
-<table id ="customerTable" border="1" style="width:300px" class="table table-striped">
+
+        <form action="@{createCustomer}" th:object="${customer}" method="get">
+        <button id="button33" type="submit" class="btn btn-primary" name="createCustomer" >Create Customer</button>
+        </form>
+    <br/>
+    <p></p>
+<table th:if="${customerPage} and ${customerPage.totalElements} > 0" id ="customerTable" border="1" class="table table-striped ">
     <thead>
         <th>ID</a></th>
         <th>Firstname</th>
@@ -35,16 +42,17 @@
         <td th:text="${customer?.id}"></td>
         <td th:text="${customer?.firstname}"></td>
         <td th:text="${customer?.lastname}"></td>
-        <td th:text="${customer?.birthdate}"></td>
+        <td style="white-space:nowrap;" th:text="${customer?.birthdate}"></td>
         <td th:text="${customer?.gender}"></td>
         <td th:text="${customer?.zipcode}"></td>
-        <td th:text="${customer?.street}"></td>
+        <td style="white-space:nowrap;" th:text="${customer?.street}"></td>
         <td th:text="${customer?.housenumber}"></td>
         <td th:text="${customer?.city}"></td>
         <td th:text="${customer?.email}"></td>
     </tr>
     </tbody>
 </table>
+</div>
 </div>
 
 <div class="text-center" th:if="${customerPage} and ${customerPage.totalElements} > 0">
@@ -83,8 +91,8 @@
     </nav>
 </div>
 
-<div class="alert alert-info" role="alert" th:unless="${customers} and ${customers.totalElements} > 0">
-    <p class="text-center" th:text="#{pretest.list.site.table.nodata}">Es wurden keine Einträge gefunden.</p>
+<div class="alert alert-info" role="alert" th:unless="${customerPage} and ${customerPage.totalElements} > 0">
+    <p class="text-center">Es wurden keine Einträge gefunden.</p>
 </div>
 
 

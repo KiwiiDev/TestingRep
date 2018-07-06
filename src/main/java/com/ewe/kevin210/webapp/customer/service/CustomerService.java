@@ -24,7 +24,7 @@ public class CustomerService {
 
 
     public Page<Customer> getAllCustomers(Pageable pageable) {
-        return (customerRepository.findAll(pageable));
+        return customerRepository.findAll(pageable);
     }
 
 
