@@ -16,46 +16,46 @@
 </head>
 <body>
 <div class="row">
-<div class="col-md 2 col-md-offset-2" style="with:100%">
-<h1> All Customers</h1>
+    <div class="col-md 2 col-md-offset-2" style="with:100%">
+        <h1> All Customers</h1>
 
-        <form action="#" th:action="@{/createCustomer}" th:object="${customerForm}" method="get">
-        <button id="button33" type="submit" class="btn btn-primary" name="createCustomer" >Create Customer</button>
+       <!-- <form action="#" th:action="@{/createCustomer}" th:object="${customerForm}" method="get">
+            <button id="button33" type="submit" class="btn btn-primary" name="createCustomer" >Create Customer</button>
         </form>
+        -->
+        <a href="createCustomer">Kunden hinzufügen</a>
 
-    <a href="/createCustomerForm">Mitglied hinzufügen</a>
-
-    <br/>
-    <p></p>
-<table th:if="${customerPage} and ${customerPage.totalElements} > 0" id ="customerTable" border="1" class="table table-striped ">
-    <thead>
-        <th>ID</a></th>
-        <th>Firstname</th>
-        <th>Lastname</th>
-        <th>Birthdate</th>
-        <th>Gender</th>
-        <th>Zipcode</th>
-        <th>Street</th>
-        <th>Housenumber</th>
-        <th>City</th>
-        <th>EMail</th>
-    </thead>
-    <tbody>
-    <tr th:each="customer: ${customerPage}">
-        <td th:text="${customer?.id}"></td>
-        <td th:text="${customer?.firstname}"></td>
-        <td th:text="${customer?.lastname}"></td>
-        <td style="white-space:nowrap;" th:text="${customer?.birthdate}"></td>
-        <td th:text="${customer?.gender}"></td>
-        <td th:text="${customer?.zipcode}"></td>
-        <td style="white-space:nowrap;" th:text="${customer?.street}"></td>
-        <td th:text="${customer?.housenumber}"></td>
-        <td th:text="${customer?.city}"></td>
-        <td th:text="${customer?.email}"></td>
-    </tr>
-    </tbody>
-</table>
-</div>
+        <br/>
+        <p></p>
+        <table th:if="${customerPage} and ${customerPage.totalElements} > 0" id ="customerTable" border="1" class="table table-striped ">
+            <thead>
+            <th>ID</a></th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Birthdate</th>
+            <th>Gender</th>
+            <th>Zipcode</th>
+            <th>Street</th>
+            <th>Housenumber</th>
+            <th>City</th>
+            <th>EMail</th>
+            </thead>
+            <tbody>
+            <tr th:each="customer: ${customerPage}">
+                <td th:text="${customer?.id}"></td>
+                <td th:text="${customer?.firstname}"></td>
+                <td th:text="${customer?.lastname}"></td>
+                <td style="white-space:nowrap;" th:text="${customer?.birthdate}"></td>
+                <td th:text="${customer?.gender}"></td>
+                <td th:text="${customer?.zipcode}"></td>
+                <td style="white-space:nowrap;" th:text="${customer?.street}"></td>
+                <td th:text="${customer?.housenumber}"></td>
+                <td th:text="${customer?.city}"></td>
+                <td th:text="${customer?.email}"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
 
 <div class="text-center" th:if="${customerPage} and ${customerPage.totalElements} > 0">

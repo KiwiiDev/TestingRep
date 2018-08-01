@@ -112,11 +112,18 @@
 			    
 			    
                 
-		<form th:action="@{/createCustomer}" th:object="${customer}" method="post"><button id="button31" type="button" class="btn btn-success" name="saveCustomer">Speichern</button></form></div></div><div class="col-md-6"><div class="form-group pull-right">
-			    
-			    
-                
-		<form><button id="button33" type="button" class="btn btn-danger" name="discardCustomer">Verwerfen</button></form></div></div></div></div>
+		<form th:action="@{/createCustomer}" th:object="${customer}" method="post">
+            <button id="button31" type="button" class="btn btn-success" name="saveCustomer">Speichern</button>
+        </form>
+
+                                        </div>
+                                        </div><div class="col-md-6"><div class="form-group pull-right">
+
+        <form action="#" th:action="@{/createCustomer}" th:object="${customerForm}" method="post">
+            <input type="text" th:field="*{bar}" />
+            <input type="submit" />
+        </form>
+        <form><button id="button33" type="button" class="btn btn-danger" name="discardCustomer">Verwerfen</button></form></div></div></div></div>
                                     </div>
                                 
 

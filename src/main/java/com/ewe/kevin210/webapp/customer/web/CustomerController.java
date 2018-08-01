@@ -10,12 +10,10 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestParam;
 
+import java.io.IOException;
 import java.util.Optional;
 
 
@@ -25,9 +23,9 @@ import java.util.Optional;
 public class CustomerController {
 
     private static final String CUSTOMER_PAGE = "customerPage";
-    private static final String CUSTOMER_SITE = "customer/customer";
-    private static final String CUSTOMER_CREATE = "createCustomerForm";
-    private static final Sort DEFAULT_SORT = new Sort(Sort.DEFAULT_DIRECTION, "id");
+    private static final String CUSTOMER_SITE = "customer/index";
+    private static final String CREATE_SITE = "customer/customerFormular";
+    private static final Sort DEFAULT_SORT = new Sort(Sort.Direction.DESC, "id");
     private static final String PAGE_REQ_PARAM = "page";
     private static final int DEFAULT_PAGE_SIZE = 20;
 
@@ -46,30 +44,22 @@ public class CustomerController {
 
         return customerService.getAllCustomers(pageRequest);
     }
-    @RequestMapping(value ="/createCustomer", method = RequestMethod.GET)
-    public String getNewCustomerFormular(ModelMap model) {
-       // model.addAttribute()
-        return CUSTOMER_CREATE;
+    @GetMapping(value ="/createCustomer")
+    public String getNewCustomer (ModelMap model) {
+        model.addAttribute("customer", new Customer());
+        return CREATE_SITE;
     }
 
-    @RequestMapping(value = "/createCustomer", method = RequestMethod.POST)
-    public String NewCustomer(ModelMap model){
-        model.addAttribute(CUSTOMER_CREATE, saveNewCustomer());
-        return CUSTOMER_CREATE;
+    @PostMapping(value ="/createCustomer")
+    public String newCustomerPostRequest(@ModelAttribute Customer customer) throws IOException {
+
+        customerService.createNewCustomer(customer);
+
+
+        return CUSTOMER_SITE;
     }
 
-    private Customer saveNewCustomer(){
-        Customer customer = new Customer();
-        //get all Attributes from the html page and add it to the attributes of the customer object
-        return customer;
-    }
-/*
-    @RequestMapping(value ="/createCustomer", method = RequestMethod.GET)
-    public String showCreateCustomerPage(ModelMap model) {
-        Customer customer = new Customer();
-        model.addAttribute(CUSTOMER_CREATE, customer);
 
-        return CUSTOMER_CREATE;
-    }*/
+
 
 }

@@ -10,6 +10,7 @@ import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.Objects;
+import org.springframework.util.*;
 
 @Entity
 @Table(name = "customer")
@@ -37,6 +38,33 @@ public class Customer implements Serializable {
 
 
     public Customer() {
+    }
+
+    public Customer(Customer customer) {
+
+        this.id = 101;
+        this.firstname = customer.getFirstname();
+        this.lastname = customer.getLastname();
+        this.birthdate = customer.getBirthdate();
+        this.gender = customer.getGender();
+        this.zipcode = customer.getZipcode();
+        this.street = customer.getStreet();
+        this.housenumber = customer.getHousenumber();
+        this.city = customer.getCity();
+        this.email = customer.getEmail();
+    }
+
+    public Customer(String firstname, String lastname, Date birthdate, String gender, int zipcode, String street, int housenumber, String city, String email) {
+        id = 101;
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.birthdate = birthdate;
+        this.gender = gender;
+        this.zipcode = zipcode;
+        this.street = street;
+        this.housenumber = housenumber;
+        this.city = city;
+        this.email = email;
     }
 
     public int getId() {
